@@ -7,8 +7,8 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -17,12 +17,12 @@
             <a href="">
                 <img src="https://png.icons8.com/metro/1600/running-rabbit.png" alt="logo" class="na-imglogo">
             </a>
-            <ul class="na-listeitem">
+            <ul class="na-listeitem" id="itemliste">
                 <li >
                     <a href="" class="li-link active">Acceuil</a>
                 </li>
                 <li>
-                    <a href="" class="li-link">L'Equipe</a>
+                    <a href="" class="li-link">L'équipe</a>
                 </li>
                 <li>
                     <a href="" class="li-link">Prix</a>
@@ -31,18 +31,25 @@
                     <a href="" class="li-link">Blog</a>
                 </li>
             </ul>
+            <a class="linkmenuburger" href="javascript:menuBurger()">
+                <i class="fas fa-bars"></i>
+            </a>
         </nav>
         <section class="section-text">
             <h2 class="se-titre">Lapinator</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error amet explicabo impedit tenetur corrupti, tempora,
-                adipisci exercitationem qui autem itaque veritatis. Ipsa esse numquam, nesciunt consectetur debitis reprehenderit
-                natus consequatur.</p>
+            <p>Lorem ipsum, dolor sit amet</p>
         </section>
+
+
         <form name="formulaire" class="formulaire">
-            <div class="fo-input">
-                <input type="text" name="ID" placeholder="ID" class="in-txt">
-                <input type="button" value="Submit" class="in-submit">
+            <div class="fo-container">
+                <div class="fo-input">
+                    <i class="fas fa-sign-in-alt in-icon"></i>
+                    <input type="text" name="ID" placeholder="Entre votre code session " class="in-txt">
+                    <input type="button" value="Let's go !" class="in-submit">
+                </div>
             </div>
+            
             
             <p class="fo-txtoublie">
                 <a href="">Id oublier</a>
