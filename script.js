@@ -1,4 +1,15 @@
+var open =0;
 function menuBurger(){
-    document.getElementById('itemliste').className=menuburger;
+    if (open==0) {
+        document.getElementById('itemliste').className="menuburger animated fadeInDown";
+
+        open=1;
+    } else{
+        document.getElementById('itemliste').className="na-listeitem";
+
+        open=0
+    }
+    
+
 }
 

@@ -8,17 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <script src="script.js"></script>
 </head>
 
 <body>
     <div class="container">
             <div class="left-panel">
-                    <nav class="lp-navBar">
+                    <nav class="lp-navBar" id="navBar">
                         <a href="">
-                            <img src="https://png.icons8.com/metro/1600/running-rabbit.png" alt="logo" class="na-imglogo">
+                            <img src="running-rabbit.png" alt="logo" class="na-imglogo">
                         </a>
                         <ul class="na-listeitem" id="itemliste">
                             <li>
@@ -47,8 +50,10 @@
                     <form name="formulaire" class="formulaire">
                         <div class="fo-container">
                             <div class="fo-input">
-                                <i class="fas fa-sign-in-alt in-icon"></i>
-                                <input type="text" name="ID" placeholder="Entre votre code session " class="in-txt">
+                                <div class="fo-inputEnter">
+                                    <i class="fas fa-sign-in-alt in-icon"></i>
+                                    <input type="text" name="ID" placeholder="Entre votre code session " class="in-txt">
+                                </div>
                                 <input type="button" value="Let's go !" class="in-submit">
                             </div>
                         </div>
